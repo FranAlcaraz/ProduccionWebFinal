@@ -47,7 +47,7 @@
 														WHERE tmp.id_producto = pp.id_producto
 														AND DATE(tmp.fecha_desde) <= DATE(NOW()))
 				WHERE p.sn_habilitado = -1
-				'.$region.'
+				'.$marca.'
 				'.$categoria.'
 				'.$id_producto.'
 				'.$soloDestacados.'
@@ -78,21 +78,21 @@
 		}
 	}
 	
-	function obtenerRegiones($con){
-		$region = -1;
-		if(empty($_POST['region']) == false){
-			$region = $_POST['region'];
-			if(is_numeric($region) == false){
-				$region = -1;
+	function obtenerMarcas($con){
+		$marca = -1;
+		if(empty($_POST['marca']) == false){
+			$marca = $_POST['marca'];
+			if(is_numeric($marca) == false){
+				$marca = -1;
 			}
 		}
-		$sql = "SELECT * from regiones ";
-		$regiones = $con->query($sql);
-		foreach($regiones as $index => $item){
-			if($region == $item['id_region']){
-				echo '<option value="'.$item['id_region'].'" selected>'.$item['txt_desc'].'</option>';
+		$sql = "SELECT * from marcas ";
+		$marcas = $con->query($sql);
+		foreach($marcas as $index => $item){
+			if($marca == $item['id_marca']){
+				echo '<option value="'.$item['id_marca'].'" selected>'.$item['txt_desc'].'</option>';
 			}else{
-				echo '<option value="'.$item['id_region'].'">'.$item['txt_desc'].'</option>';
+				echo '<option value="'.$item['id_marca'].'">'.$item['txt_desc'].'</option>';
 			}
 		}
 	}
