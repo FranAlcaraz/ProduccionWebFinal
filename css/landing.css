@@ -1,0 +1,159 @@
+/* LANDING: */
+div#lan_slider { overflow: hidden; }
+div#lan_slider .lan_animfigure img { width: 20%; height:20%; float: left; }
+div#lan_slider .lan_animfigure { 
+  position: relative;
+  width: 500%;
+  height: 500%;
+  margin: 0;
+  left: 0;
+  text-align: left;
+  font-size: 0;
+  animation: 30s slidy infinite;  
+}
+
+.lan_wrapper div{ 
+    margin-top: 10px;
+    width: 580px; 
+    min-height: 61.70px;
+    box-sizing: border-box;
+}
+#msj{ 
+    margin-top: 10px;
+    width: 340px; 
+    min-height: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+#lan_hora{
+    color:#000000; 
+    margin:0; 
+    font-size: 15px; 
+    text-shadow: 1px 1px 3px #323232;
+    text-align: center;
+}
+@media screen and (min-width: 290px) {
+   .lan_wrapper {
+      height: auto; overflow: hidden; 
+   }
+    #lan_one { width: 580px; float: left; }
+    #lan_three { width: 350px; float: left; padding-left: 10px; }
+}
+h1 { 
+    font-size: 17px;
+}
+h2 { 
+    font-size: 14px;
+    font-weight: normal;
+}
+div#lan_three form{
+        margin: 0 auto;
+        width:350px;
+        margin-bottom: 20px;
+        padding: 5px 20px;
+        border-radius: 7px;
+        background-color: ghostwhite;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        margin-top:8px;
+        text-align: left;
+        border-color: #000;
+    }
+#imagenok{
+    font-size: 10px;
+}
+
+.wrapper-testimonios{
+	width: 100%;
+	margin-top: 10px;
+	background: #E8E5E4;
+	padding: 30px 0;
+    height: 430px;
+}
+
+.slider-testimonios{
+	width: 85%;
+	max-width: 940px;
+	margin: auto;
+}
+
+.testimonios-client{
+	margin-bottom: 15px;
+}
+
+.crop {
+
+}
+
+.crop img {
+    width: 283px;
+    height: 211px;
+    object-fit: cover;
+    margin:auto;
+    border-radius:20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+}
+
+.client-name{
+	font-family: "Open sans";
+    text-shadow: 1px 1px 1px #323232;
+	font-weight: 600;
+	text-align: center;
+	font-size: 25px;
+}
+
+.testimonios-text p{
+	font-family: "Open sans";
+	font-size: 25px;
+	font-weight: 400;
+	font-style: italic;
+	text-align: center;
+	color: #454545;
+}
+.contacto, textarea,select{
+        width: 100%;
+        margin-bottom: 18px;
+        padding: 5px;
+        box-sizing:border-box;
+        font-size: 14px;
+}
+input{
+        margin-bottom: 18px;
+        padding: 5px;
+        box-sizing:border-box;
+        font-size: 14px;
+}
+form h1{
+        color: #000;
+        font-size: 20px;
+        margin-bottom: 18px;
+        display:inline-block;
+        font-family: monospace;
+}
+#mensajeenviado2{
+        color: #FF0000;
+        font-size: 15px;
+        margin-bottom: 0px;
+        padding: 0;
+        font-family: monospace;
+        text-align: center;
+}
+.servicio{
+    color:#000000; 
+    margin:0; 
+    font-size: 15px; 
+    text-shadow: 1px 1px 1px #323232;
+    text-align: center;
+}
+.regresar {
+        text-decoration: none;
+        display: block;
+        color: #000;
+        text-align: center;
+        line-height: 15px;
+        font-size: 20px; 
+        border-top: 1px solid transparent;
+        transition: all .5s
+}

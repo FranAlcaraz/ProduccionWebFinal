@@ -1,0 +1,513 @@
+/* PLANTILLA: */
+html,
+	body {
+    font-family: 'Montserrat';
+    background-image: url("../img/general/fondo.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    margin:0;
+    padding:0;
+    height:100%;
+}
+
+
+
+
+
+
+.dropdown-submenu{ position: relative; }
+.dropdown-submenu>.dropdown-menu{
+  top:0;
+  left:100%;
+  margin-top:-6px;
+  margin-left:-1px;
+  -webkit-border-radius:0 6px 6px 6px;
+  -moz-border-radius:0 6px 6px 6px;
+  border-radius:0 6px 6px 6px;
+}
+.dropdown-submenu>a:after{
+  display:block;
+  content:" ";
+  float:right;
+  width:0;
+  height:0;
+  border-color:transparent;
+  border-style:solid;
+  border-width:5px 0 5px 5px;
+  border-left-color:#cccccc;
+  margin-top:5px;margin-right:-10px;
+}
+.dropdown-submenu:hover>a:after{
+  border-left-color:#555;
+}
+.dropdown-submenu.pull-left{ float: none; }
+.dropdown-submenu.pull-left>.dropdown-menu{
+  left: -100%;
+  margin-left: 10px;
+  -webkit-border-radius: 6px 0 6px 6px;
+  -moz-border-radius: 6px 0 6px 6px;
+  border-radius: 6px 0 6px 6px;
+}
+
+/*
+@media (min-width: 768px) { 
+}
+@media (min-width: 992px) { 
+}
+@media (min-width: 1200px) { 
+}
+*/
+
+
+
+
+
+
+
+
+ul.dropdown-menu {
+    background-color: #333;
+}
+#container {
+    min-height:100%;
+    position:relative;
+}
+#body {
+    padding-top:0px;
+    padding-bottom:100px;	
+    max-width: 940px;	
+	margin: 0 auto;
+}
+
+#logo {
+    border-top: 10px solid transparent;
+    text-align: center;
+    max-width: 940px;	
+	margin: 0 auto;
+}
+
+    /* REGISTRATE MI COMPRA: */
+    .wrapperregistro div {
+        margin-top: 0px;
+        width: 940px; 
+        height: 65px;
+        box-sizing: border-box;
+    }
+    .wrapperregistro div img {
+        width: 85%; 
+    }
+
+    @media screen and (min-width: 180px) {
+       .wrapperregistro {
+          height: auto; overflow: hidden; 
+       }
+        #oneregistro { width: 200px;float: left; }
+        #tworegistro { width: 135px; height: 30px; float: right; }
+        #threeregistro { width: 135px; height: 50px; float: right; }
+    }
+    .registrocompra a {
+        text-decoration: none;
+        display: block;
+        color: #000;
+        text-align: right;
+        line-height: 10px;
+        border-top: 25px solid transparent;
+        transition: all .5s
+    }
+    .registrocompra a i {
+        color: #000;
+        font-weight:normal;
+        margin-right: 5px;
+        font-size: 1.3em;
+        vertical-align:sub
+
+    }
+    /* FIN REGISTRATE MI COMPRA. */
+
+    /* MENU: */
+    #nav{
+        text-align:center;
+        background-color:#407dec;
+        margin-bottom: 0px;
+        margin-top: 0px;
+    }
+    #nav li{
+        width:auto;
+    }
+    #nav a{
+        border-bottom:2px solid transparent;
+    }
+    #nav a:hover{
+        border-bottom:1px solid #FFFFFF;
+        width:auto;
+    }
+    .menu li {
+        display: inline-block;
+        padding: 0 2%;
+        position: relative;
+        width: 15%;
+        z-index: 100;
+    }
+    .menu li a {
+        text-decoration: none;
+        display: block;
+        color: #fff;
+        line-height: 20px;
+        border-top: 0px solid transparent;
+        transition: all .5s
+    }
+    .menu li a i {
+        margin-right: 5px;
+        font-size: 1.3em;
+        vertical-align:sub
+    }
+        /* ICONOS: */
+        @font-face {
+          font-family: "FontAwesome";
+          src: url("fontawesome-webfont.woff");
+        }
+        .icon {
+            font-family: "FontAwesome", sans-serif;
+            font-style: normal;
+        }
+        .icon-principal:before {
+            content: "\f015"
+        }
+        .icon-avion:before {
+            content: "\f072"
+        }
+        .icon-paquetes:before {
+            content: "\f0b1";
+        }
+        .icon-vuelos:before {
+            content: "\f072";
+        }
+        .icon-hoteles:before {
+            content: "\f0fd";
+        }
+        .icon-contacto:before {
+            content: "\f095";
+        }
+        .icon-registro:before {
+            content: "\f007";
+        }
+        .icon-compra:before {
+            content: "\f07a";
+        }
+        .icon-facebook:before {
+            content: "\f082";
+            color: white;
+            font-size:38px;
+        }
+        .icon-twitter:before {
+            content: "\f081";
+            color: white;
+            font-size:38px;
+        }
+        /* FIN ICONOS: */
+    #btnUp {
+        padding: 15px; 
+        border-radius: 20px;
+        bottom: 100px; 
+        right: 40px; 
+        z-index: 999; 
+        display: none; 
+        border: none; 
+        outline: none;
+        position: fixed; 
+        cursor: pointer; 
+        background-color: red; 
+        color: white; 
+    }
+    #btnUp:hover {
+        background-color: #000; 
+    }
+    /* FIN MENU. */
+
+    /* FOOTER. */
+    #containerfoo {
+        padding-top: 8px;
+        text-align: center;
+        max-width: 940px;
+        max-height: 10px;
+        margin: 0 auto;
+    }
+    #footer {
+        position:absolute;
+        bottom:0;
+        width:100%;
+        height:75px;			
+        background:#0101DF;
+        color: #fff;
+    }
+    #footer #p1  {
+        padding:2px;    
+        text-align: left;	
+        margin: 0 auto;
+        font-size: 14px;
+        width: 330px;
+    }
+    #footer #p2  {
+        padding:2px;    
+        text-align: left;	
+        margin: 0 auto;
+        width: 350px;
+        font-size: 14px;
+    }
+	#footer #p3  {
+        padding:2px;    
+        text-align: left;	
+        margin: 0 auto;
+        width: 220px;
+        font-size: 14px;
+    }
+	#footer .pdf  {
+		text-decoration: none;
+		color: #fff;
+
+    }
+    #onefoo { width: 0px; float: left; }
+    #twofoo { width: 50px; height: 50px; float: right; line-height: 40px;}
+    #threefoo { width: 50px; height: 50px; float: right; line-height: 40px;}
+    #twofoo a { text-decoration: none; }
+    #threefoo a { text-decoration: none; }
+    /* FIN FOOTER. */
+/* FIN PLANTILLA. */
+
+
+/* PRINCIPAL: */
+@keyframes slidy {
+0% { left: 0%; }
+20% { left: 0%; }
+25% { left: -100%; }
+45% { left: -100%; }
+50% { left: -200%; }
+70% { left: -200%; }
+75% { left: -300%; }
+95% { left: -300%; }
+100% { left: -400%; }
+}
+div#slider { overflow: hidden; }
+div#slider .animfigure img { width: 20%; float: left; }
+div#slider .animfigure { 
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  text-align: left;
+  font-size: 0;
+  animation: 30s slidy infinite; 
+}
+div#slider .figure img { width: 20%; float: left; }
+div#slider .figure { 
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  text-align: left;
+  font-size: 0;
+}
+
+.wrapper div {
+    margin-top: 10px;
+    width: 940px; 
+    min-height: 200px;
+    box-sizing: border-box;
+}
+.hora{
+    color:#000000; 
+    margin:0; 
+    font-size: 15px; 
+    text-shadow: 1px 1px 3px #323232;
+    text-align: center;
+}
+@media screen and (min-width: 290px) {
+   .wrapper {
+      height: auto; overflow: hidden; 
+   }
+    #one { width: 290px; float: left; }
+    #two { width: 290px; float: left; }
+    #three { width: 350px; float: left; }
+}
+h1 { 
+    font-size: 17px;
+}
+h2 { 
+    font-size: 14px;
+    font-weight: normal;
+}
+/* FIN HTML PRINCIPAL. */
+
+
+
+/* HTML SECUNDARIOS */
+#titulo{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color:#777777; 
+    margin:0; 
+    font-size: 35px; 
+    text-shadow: 1px 1px 3px #323232;
+}
+    /* HTML PAQUETES*/
+    .wrapperpaquetes div {
+        margin-top: 25px;
+        padding-left: 10px;
+        padding-right: 10px;
+        width: 235px; 
+        min-height: 160px;
+        box-sizing: border-box;
+    }
+    .wrapperpaquetes div img { width: 100%; float: left; }
+    @media screen and (min-width: 300px) {
+       .wrapperpaquetes {
+          height: auto; overflow: hidden; 
+       }
+        .objpaquetes { width: 300px; float: left; }
+    }
+    /* FIN HTML PAQUETES*/
+
+    /* HTML VUELOS*/
+    .wrappervuelos div {
+        margin-top: 25px;
+        padding-left: 5px;
+        padding-right: 5px;
+        width: 313px; 
+        min-height: 160px;
+        box-sizing: border-box;
+    }
+    .wrappervuelos div img { width: 100%; float: left; }
+    @media screen and (min-width: 300px) {
+       .wrappervuelos {
+          height: auto; overflow: hidden; 
+       }
+        .objvuelos { width: 300px; float: left; }
+    }
+    /* FIN HTML VUELOS*/
+
+    /* HTML HOTELES*/
+    .hotelcat {
+        text-decoration: none;
+        display: block;
+        color: #000;
+
+    }
+    .wrapperhoteles div {
+        margin-top: 25px;
+        padding-left: 10px;
+        padding-right: 10px;
+        width: 310px; 
+        min-height: 160px;
+        box-sizing: border-box;
+    }
+    .wrapperhoteles div img { width: 100%; float: left; }
+    @media screen and (min-width: 300px) {
+       .wrapperhoteles {
+          height: auto; overflow: hidden; 
+       }
+        .objhoteles { width: 300px; float: left; }
+    }
+    /* FIN HTML HOTELES*/
+
+    /* HTML CONTACTO*/
+    .wrappercontacto div {
+        margin-top: 25px;
+        padding-right: 20px;
+        width: 470px; 
+        height: 410px;
+        box-sizing: border-box;    
+    }
+    .wrappercontacto div img { 
+        width: 100%;  
+        float: left; 
+    }
+    #dos { 
+        padding-top: 30px;
+        width: 55%;  
+        float: right; 
+        padding-right: 35px;
+    }
+    @media screen and (min-width: 200px) {
+       .wrappercontacto {
+          height: auto; overflow: hidden; 
+       }
+        .objcontacto1 { width: 200px; float: left; }
+        .objcontacto2 { width: 200px; float: right; }
+    }
+    #mensajeenviado{
+        color: #000;
+        font-size: 20px;
+        margin-bottom: 20px;
+        font-family: monospace;
+        text-align: center;
+    }
+    form:not(#formMarca){
+        margin: 0 auto;
+        width:550px;
+        margin-bottom: 20px;
+        padding: 5px 20px;
+        border-radius: 7px;
+        background-color: ghostwhite;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        margin-top:0px;
+        text-align: left;
+        border-color: #000;
+    }
+
+    label {
+      display: block;
+      padding-left: 15px;
+      text-indent: -15px;
+    }
+    input{
+        margin-bottom: 10px;
+        padding: 5px;
+        box-sizing:border-box;
+        font-size: 14px;
+    }
+    .contacto, textarea,select{
+        width: 100%;
+        margin-bottom: 5px;
+        padding: 5px;
+        box-sizing:border-box;
+        font-size: 14px;
+    }
+    form h2{
+        color: #000;
+        font-size: 20px;
+        margin-bottom: 20px;
+        display:inline-block;
+        font-family: monospace;
+    }
+    textarea{
+        max-height: 200px;
+        min-height:100px;
+        max-width: 100%;
+        border-color: #000;
+    }
+    #boton{
+        background-color: gray;
+        color: #000;
+        padding: 10px;
+        width: 100%;
+        font-family: monospace;
+        font-weight: bolder;
+        font-size: 1.5em;
+    }
+    #boton:hover{
+        cursor:pointer;
+    }
+    @media (max-width:480px){
+        form{
+          width:100%;
+        }	
+    }
+    /* FIN HTML CONTACTO*/
+
+/* FIN HTML SECUNDARIOS */
+
+
+
