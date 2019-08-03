@@ -6,7 +6,7 @@ require('inc/header.php');
       
       <?$marcaMenu = 'Marcas';
 	  
-	 $marcas = new Marca($con);
+    $marcas = new Marca($con);
 	include('inc/side_bar.php');
 	 
 	 
