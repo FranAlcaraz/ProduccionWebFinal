@@ -8,7 +8,7 @@ require('inc/header.php');
       <?$marcaMenu = 'Marcas';
 	include('inc/side_bar.php');
 	
-	$marcas = new Marca($con); 
+	$marca = new Marca($con); 
 	
 	if(isset($_GET['edit'])){
             $marcas = $marca->get($_GET['edit']); 
