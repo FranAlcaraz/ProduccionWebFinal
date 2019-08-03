@@ -24,7 +24,7 @@ $user = new Usuario($con);
 $producto = new Producto($con);
 $categoria = new Categoria($con);
 //$region = new Region($con);
-$marcas = new Marca($con);
+$marca = new Marca($con);
 $comentario = new Comentario($con);
 
 if(isset($_POST['login'])){

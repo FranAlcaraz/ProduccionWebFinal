@@ -48,9 +48,9 @@ Class Marca{
 	public function get($id){
 	    $query = "SELECT id_marca, txt_desc
 		           FROM marcas WHERE id_marcas = ".$id;
-        $marca = $this->con->query($query)->fetch(PDO::FETCH_OBJ); 
+        $marcas = $this->con->query($query)->fetch(PDO::FETCH_OBJ); 
 		
-        return $marca;
+        return $marcas;
 	}
 		
 	public function edit($data){
