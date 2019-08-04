@@ -1,5 +1,5 @@
 <footer>
-  <p class="pull-right">©2018 Doural - Malgieri</p>
+  <p class="pull-right">2019 Alcaraz - Modarelli - Rios</p>
 </footer>
         
 	<!-- script references -->

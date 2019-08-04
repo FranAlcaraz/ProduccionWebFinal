@@ -4,7 +4,7 @@
       
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>TravelWorld</title>
+        <title>Vape-Shop</title>
         <meta name="author" content="Francisco Alcaraz">
         <meta name="description" content="Vape Argentina">
         <meta name="keywords" content="vapeo, equipos , smok, vaporesso, liquidos">
