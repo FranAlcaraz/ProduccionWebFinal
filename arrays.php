@@ -59,7 +59,7 @@
         'title' => 'slider1',
         'width' => '940',
         'height' => '529',
-		'url' => 'index.php?url=productos&id=2'
+		'url' => 'index.php?url=productos&id=44'
     ];
     $sliders[] = [
         'src' => 'img/principal/slider2.jpg',
@@ -75,7 +75,7 @@
         'title' => 'slider1',
         'width' => '940',
         'height' => '529',
-		'url' => 'index.php?url=productos&id=2'
+		'url' => 'index.php?url=productos&id=44'
     ];
     $sliders[] = [
         'src' => 'img/principal/slider2.jpg',
@@ -91,7 +91,7 @@
         'title' => 'slider1',
         'width' => '940',
         'height' => '529',
-		'url' => 'index.php?url=productos&id=2'
+		'url' => 'index.php?url=productos&id=44'
     ];
     
 ?>
