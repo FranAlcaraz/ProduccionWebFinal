@@ -2,9 +2,7 @@
                 <?php
                     $asunto = "";
                     $mensaje = "";
-                    $checkpaquete = "";
-                    $checkvuelo = "";
-                    $checkhotel = "";
+
                     //Si tenemos un parametro de error, vemos cual es y mostramos el mensaje correspondiente:
                     if(empty($_GET['respuesta']) == false){
                         $resp = $_GET['respuesta'];

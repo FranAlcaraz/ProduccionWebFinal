@@ -1,5 +1,5 @@
                <h1 id="titulo">QUIENES SOMOS</h1>
-                <div class="wrapperhoteles">
+                <div class="wrappertest">
                     <p>
                     VAPE-SHOP, en Buenos aires, somos expertos en la venta de cigarrillos electrónicos y todo tipo de accesorios.</p>
 <p>

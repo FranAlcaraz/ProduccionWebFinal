@@ -33,7 +33,7 @@
         <p>Calificacion: $estrellas</p>
         Ofertas: <br>";
         
-		//mail("jorge.doural@davinci.edu.ar","Asunto","Probando");
+		//mail("francisco.alcaraz@davinci.edu.ar","Asunto","Probando");
 		
         $sql = "INSERT INTO comentarios (ID_PRODUCTO, IP_ORIGEN, FECHA, TXT_NOMBRE, TXT_EMAIL, TXT_COMENTARIO, CANT_ESTRELLAS, SN_APROBADO) 
 		SELECT $idproducto, '$ip_origen', NOW(), '$nombre', '$correo', '$mensaje', $estrellas, 0";

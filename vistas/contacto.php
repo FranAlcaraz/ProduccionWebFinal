@@ -2,9 +2,7 @@
                 <?php
                     $asunto = "";
                     $mensaje = "";
-                    $checkpaquete = "";
-                    $checkvuelo = "";
-                    $checkhotel = "";
+                  
                     //Si tenemos un parametro de error, vemos cual es y mostramos el mensaje correspondiente:
                     if(empty($_GET['respuesta']) == false){
                         $resp = $_GET['respuesta'];
@@ -13,27 +11,14 @@
                         }else{
                             echo '<div id="mensajeenviado">La página no existe.</div>';
                         }
-                    }else if(empty($_GET['paquete']) == false){
-                        $asunto = $_GET['paquete'];
-                        $checkpaquete = "checked";
-                        $mensaje = "Hola! Me gustaría recibir las ofertas disponibles de estos paquetes, saludos!";
-                    }else if(empty($_GET['vuelo']) == false){
-                        $asunto = $_GET['vuelo'];
-                        $checkvuelo = "checked";
-                        $mensaje = "Hola! Me gustaría recibir más información sobre este vuelo, saludos!";
-                    }else if(empty($_GET['hotel']) == false){
-                        $asunto = $_GET['hotel'];
-                        $checkhotel = "checked";
-                        $mensaje = "Hola! Me gustaría recibir las ofertas disponibles para los hoteles de esta ubicación, saludos!";
+                    
                     }else if(empty($_GET['todo']) == false){
 						$asunto = $_GET['todo'];
 						if($asunto != -1){
 							echo '<div id="mensajeenviado">La página no existe.</div>';
 						}
                         $asunto = "Ofertas!";
-						$checkpaquete = "checked";
-						$checkvuelo = "checked";
-                        $checkhotel = "checked";
+					
                         $mensaje = "Hola! Me gustaría recibir las ofertas disponibles, saludos!";
                     }                     
                 ?>
@@ -50,15 +35,7 @@
                         <label title="Enviarme una copia">
                             <input type="checkbox" name="copia" value="copia" title="Enviarme una copia" checked>Enviarme una copia del mensaje
                         </label>
-                        <label title="Recibir ofertas de paquetes">
-                            <input type="checkbox" name="ofertas[]" value="paquetes" title="Recibir ofertas de paquetes" <?= $checkpaquete ?>>Recibir ofertas de Paquetes
-                        </label>
-                        <label title="Recibir ofertas de vuelos">
-                            <input type="checkbox" name="ofertas[]" value="vuelos" title="Recibir ofertas de vuelos" <?= $checkvuelo ?>>Recibir ofertas de Vuelos
-                        </label>
-                        <label title="Recibir ofertas de hoteles">
-                            <input type="checkbox" name="ofertas[]" value="hoteles" title="Recibir ofertas de hoteles" <?= $checkhotel ?>>Recibir ofertas de Hoteles
-                        </label>
+
 
                         <button name="enviar" id="boton" title="Enviar">Enviar</button>
                     </div>

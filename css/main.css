@@ -174,18 +174,6 @@ ul.dropdown-menu {
         .icon-principal:before {
             content: "\f015"
         }
-        .icon-avion:before {
-            content: "\f072"
-        }
-        .icon-paquetes:before {
-            content: "\f0b1";
-        }
-        .icon-vuelos:before {
-            content: "\f072";
-        }
-        .icon-hoteles:before {
-            content: "\f0fd";
-        }
         .icon-contacto:before {
             content: "\f095";
         }
@@ -350,7 +338,7 @@ h2 {
     font-size: 35px; 
     text-shadow: 1px 1px 3px #323232;
 }
-    /* HTML PAQUETES*/
+    
     .wrapperpaquetes div {
         margin-top: 25px;
         padding-left: 10px;
@@ -366,9 +354,9 @@ h2 {
        }
         .objpaquetes { width: 300px; float: left; }
     }
-    /* FIN HTML PAQUETES*/
+    
 
-    /* HTML VUELOS*/
+    
     .wrappervuelos div {
         margin-top: 25px;
         padding-left: 5px;
@@ -386,14 +374,14 @@ h2 {
     }
     /* FIN HTML VUELOS*/
 
-    /* HTML HOTELES*/
+    /* HTML wrappertest*/
     .hotelcat {
         text-decoration: none;
         display: block;
         color: #000;
 
     }
-    .wrapperhoteles div {
+    .wrappertest div {
         margin-top: 25px;
         padding-left: 10px;
         padding-right: 10px;
@@ -401,14 +389,14 @@ h2 {
         min-height: 160px;
         box-sizing: border-box;
     }
-    .wrapperhoteles div img { width: 100%; float: left; }
+    .wrappertest div img { width: 100%; float: left; }
     @media screen and (min-width: 300px) {
-       .wrapperhoteles {
+       .wrappertest {
           height: auto; overflow: hidden; 
        }
-        .objhoteles { width: 300px; float: left; }
+        .objtest { width: 300px; float: left; }
     }
-    /* FIN HTML HOTELES*/
+    /* FIN HTML wrappertest*/
 
     /* HTML CONTACTO*/
     .wrappercontacto div {
