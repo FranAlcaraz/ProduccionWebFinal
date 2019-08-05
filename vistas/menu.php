@@ -48,7 +48,8 @@
             <div id="logo"> 
                 <div class="wrapperregistro">
                     <div id="oneregistro">
-                        <a href="index.php" id="LogoLink"><img src="img/general/logo.png" title="Logo" alt="Logo" width="170" height="61"/></a>
+                       <h1>Vape-Shop</h1>
+<!--                        <a href="index.php" id="LogoLink"><img src="img/general/logo.png" title="Logo" alt="Logo" width="170" height="61"/></a>-->
                     </div>
                     <div id="tworegistro" class="registrocompra">
                         <a href="index.php?url=construccion" id="Compra"><i class="icon icon-compra"></i>Mi Compra</a>
@@ -63,15 +64,15 @@
             <nav class="nav">
 
                 <ul id="nav" class="menu">
-					<li><a href="index.php" id="principal"><i class="icon icon-principal"></i>PRINCIPAL</a></li>					
+					<li><a href="index.php" id="principal">PRINCIPAL</a></li>					
 					 <li class="dropdown">
 					 <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="productos"><i class="icon icon-user"></i>PRODUCTOS<b class="caret"></b></a>
 						<ul class="dropdown-menu">
 							<?php obtenerCategorias($con, 0); ?>
 						</ul>
 					</li>
-					<li><a href="index.php?url=about" id="about"><i class="icon icon-contacto"></i>QUIENES SOMOS</a></li>
-					<li><a href="index.php?url=contacto" id="contacto"><i class="icon icon-contacto"></i>CONTACTO</a></li>
+					<li><a href="index.php?url=about" id="about">QUIENES SOMOS</a></li>
+					<li><a href="index.php?url=contacto" id="contacto">CONTACTO</a></li>
                 </ul>
             </nav>
         </header>

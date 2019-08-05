@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 04-08-2019 a las 03:30:19
+-- Tiempo de generación: 05-08-2019 a las 17:21:15
 -- Versión del servidor: 10.1.40-MariaDB
 -- Versión de PHP: 7.3.5
 
@@ -76,7 +76,8 @@ INSERT INTO `comentarios` (`id_comentario`, `id_producto`, `ip_origen`, `fecha`,
 (23, 36, '192.168.0.6', '2019-08-03', 'Nicolas', 'nico@nico.com.ar', 'Malísimo. Nunca más compro acá', 1, -1),
 (24, 37, '192.168.0.123', '2019-08-03', 'Franco', 'fran@fra.com.ar', 'El mejor. Le pones un poco de CBC y quedas re loco', 5, -1),
 (25, 44, '192.168.0.10', '2019-08-04', 'Thomas', 'thomas@thomas.com.ar', 'Lo compre para mi vieja, lo termine usando yo. es una genialidad.', 5, -1),
-(26, 46, '192.168.0.22', '2019-08-04', 'Pilar', 'Pilar@pilar.com.ar', 'el vendedor un genio, el liquido masomenos.', 3, -1);
+(26, 46, '192.168.0.22', '2019-08-04', 'Pilar', 'Pilar@pilar.com.ar', 'el vendedor un genio, el liquido masomenos.', 3, -1),
+(27, 45, '::1', '2019-08-05', 'Eduardo', 'eduardp@eduardo.com.ar', 'EL mejor que compre en mi vida', 5, -1);
 
 -- --------------------------------------------------------
 
@@ -102,7 +103,8 @@ CREATE TABLE `contacto` (
 
 INSERT INTO `contacto` (`id_contacto`, `ip_origen`, `fecha`, `txt_nombre`, `txt_apellido`, `txt_email`, `txt_telefono`, `txt_asunto`, `txt_mensaje`) VALUES
 (1, '::1', '2018-10-03', 'Pedrito', 'Pe', 'a@a.com', '41115554', 'Asunto', 'Mensaje<br />\r\n<br />\r\nasd'),
-(2, '::1', '2019-08-03', 'Francisco', 'Alcaraz', 'fran.alcaraz70@gmail.com', '91133476454', 'sdsadsadsad', 'dsadsadsadasas');
+(2, '::1', '2019-08-03', 'Francisco', 'Alcaraz', 'fran.alcaraz70@gmail.com', '91133476454', 'sdsadsadsad', 'dsadsadsadasas'),
+(3, '::1', '2019-08-04', 'francisco', 'alcaraz', 'fran.alcaraz70@gmail.com', '91133476454', 'test', 'testets');
 
 -- --------------------------------------------------------
 
@@ -265,7 +267,9 @@ INSERT INTO `precios` (`id_producto`, `fecha_desde`, `precio`) VALUES
 (43, '2019-08-03', '900.00'),
 (44, '2019-08-03', '6000.00'),
 (45, '2019-08-03', '8000.00'),
-(46, '2019-08-03', '800.00');
+(46, '2019-08-03', '800.00'),
+(47, '2019-08-05', '2500.00'),
+(48, '2019-08-05', '500.00');
 
 -- --------------------------------------------------------
 
@@ -300,7 +304,9 @@ INSERT INTO `productos` (`id_producto`, `marca`, `categoria`, `txt_desc`, `alt`,
 (43, 8, 14, 'Coil Vaporesso Nrg', 'Coil Vaporesso Nrg', 'img/productos/producto43.png', 'Los núcleos GT están especialmente diseñados para encajar en la serie de tanques NRG. Viene en algodón tradicional y cerámica CCELL Vaporesso significativa en diferentes resistencias, desde GT2 a GT8, selección total de 5 resistencias para elegir.\r\n\r\nLas resistencias GT8 de Vaporesso para el NRG Tank soportan 60-110W de potencia con un mejor rendimiento.', 0, -1),
 (44, 4, 13, 'SABER', 'SABER', 'img/productos/producto44.png', 'El IJOY Saber 100 es un kit avanzado extremadamente compacto y portátil que consta de 100W de batería. Este kit consta de bateria Saber 100 y atomizador DIAMOND SUBOHM TANK de 2ml con grabado CNC y colores atractivos. Alimentado por una sola batería 20700/18650 con chip avanzado IWEPAL, el Sabre 100 dispara hasta 100W de potencia máxima con potencia ajustable con una pantalla brillante y grande. El saber Mod tiene unas medidas de 97 x 29mm.', -1, -1),
 (45, 3, 12, 'TFV-12', 'TFV12', 'img/productos/producto45.png', 'l TFV12 Prince Tank by Smok es un tanque diseñado para usuarios que no quedaron completamente satisfechos con el TFV8 y el TFV12 original. El TFV12 Prince posee una increíble capacidad de líquido de 8ml que logra con una forma abultada del tubo de cristal. También puede utilizar las nuevas resistencias Prince V12 atomizer heads (quadruple, sextuple y decuple coils) especialmente diseñadas para incrementar la producción de vapor y sabor del TFV12 Prince.\r\n\r\nEl atomizador TFV12 Prince presenta 12 agujeros para maximizar la saturación de líquido y la disipación de calor. También presenta una nueva tapa deslizable para el rellenado superior con un mecanismo de bloqueo con un botón que facilita el acceso.', -1, -1),
-(46, 7, 11, 'Nasty e-Liquid', 'nasty', 'img/productos/producto46.png', 'Liquidos premium TOPE DE GAMA con excelente presentación (las botellas vienen dentro de cajas de lata) y sabores excitantes.\r\n\r\nSi sos  de paladar exigente y no te conformas con un simple liquido premium. este es el siguiente nivel.\r\n\r\nSabores (únicamente en 3mg de nicotina):\r\n\r\nTrap Queen: Frutillas recien recolectadas del campo, el mejor liquido con sabor a frutilla que puedas encontrar, combina frutillas maduras con un toque refrescante.\r\nSlow Blow: Sabor a jugo de anana con limonada, refrescante para vapear todo el dia, no encontraras uno igual.\r\nJuice Fat Boy: Es un delicioso sabor afrutado a mango maduro dulce y un mango exótico que le da un punto de acidez, con un toque ligeramente mentolado.\r\nWicked Haz:  Descubre este excelente sabor de grosella negra y limonada, juntos haran que ', 0, -1);
+(46, 7, 11, 'Nasty e-Liquid', 'nasty', 'img/productos/producto46.png', 'Liquidos premium TOPE DE GAMA con excelente presentación (las botellas vienen dentro de cajas de lata) y sabores excitantes.\r\n\r\nSi sos  de paladar exigente y no te conformas con un simple liquido premium. este es el siguiente nivel.\r\n\r\nSabores (únicamente en 3mg de nicotina):\r\n\r\nTrap Queen: Frutillas recien recolectadas del campo, el mejor liquido con sabor a frutilla que puedas encontrar, combina frutillas maduras con un toque refrescante.\r\nSlow Blow: Sabor a jugo de anana con limonada, refrescante para vapear todo el dia, no encontraras uno igual.\r\nJuice Fat Boy: Es un delicioso sabor afrutado a mango maduro dulce y un mango exótico que le da un punto de acidez, con un toque ligeramente mentolado.\r\nWicked Haz:  Descubre este excelente sabor de grosella negra y limonada, juntos haran que ', 0, -1),
+(47, 3, 13, 'VAPE PEN 22', 'PEN 22', 'img/productos/producto47.png', ' En existencias\r\n Añadir reseña\r\nEl SMOK Vape Pen 22 es un cigarrillo electrónico cilíndrico para vapear a pulmón con un diseño sencillo y un tamaño reducido de 22mm (diámetro) y 105mm (alto) con una batería interna de 1650mAh. SMOK Vape Pen 22 se distingue de otros modelos similares en que se puede desmontar del todo, lo que facilita su mantenimiento y limpieza. Sus resistencias de 0.3 ohm permiten una gran producción de vapor y un sabor muy auténtico.', 0, -1),
+(48, 4, 14, 'COIL AVENGER', 'AVENGER', 'img/productos/producto48.png', 'a bobina de repuesto IJOY X3-C1S de 0.35ohm está especialmente diseñada para el tanque IJOY Avenger. Puede caber para la potencia 40-80W que trae el sabor denso. 3 piezas en un paquete. Consiguelo para tu IJOY Avenger Tank.\r\n\r\nCompatible con los tanques: Avenger, iJoy Captain X3 Sub-Ohm Tank, Shogun kit, diamond kit y similares.', 0, -1);
 
 -- --------------------------------------------------------
 
@@ -438,19 +444,19 @@ ALTER TABLE `usuarios_perfiles`
 -- AUTO_INCREMENT de la tabla `categorias`
 --
 ALTER TABLE `categorias`
-  MODIFY `id_categoria` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+  MODIFY `id_categoria` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 
 --
 -- AUTO_INCREMENT de la tabla `comentarios`
 --
 ALTER TABLE `comentarios`
-  MODIFY `id_comentario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
+  MODIFY `id_comentario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
 
 --
 -- AUTO_INCREMENT de la tabla `contacto`
 --
 ALTER TABLE `contacto`
-  MODIFY `id_contacto` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id_contacto` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT de la tabla `marcas`
@@ -480,7 +486,7 @@ ALTER TABLE `permisos`
 -- AUTO_INCREMENT de la tabla `productos`
 --
 ALTER TABLE `productos`
-  MODIFY `id_producto` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=47;
+  MODIFY `id_producto` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=49;
 
 --
 -- AUTO_INCREMENT de la tabla `usuarios`
