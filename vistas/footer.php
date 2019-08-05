@@ -56,7 +56,7 @@
 
             <ul class="list-unstyled">
               
-                <a href="http://www.vaporesso.com"><img src="img/general/vaporeso_logo.png" alt="vaporesso logo"></a>
+                <a href="http://www.vaporesso.com"><img id="vaporeso" src="img/general/vaporeso_logo.png" style="width:300px; height:52px;" alt="vaporesso logo"></a>
            
                 <a href="http://www.smok.com"><img src="img/general/smok_logo.png" alt="smok logo"></a>
              

@@ -246,3 +246,8 @@
 @media (max-width: 767px){
 	.testimonial4_indicators .carousel-indicators li {margin-top: 10px;}
 }
+#vaporeso {
+    width: 300px !important;
+    height: 52px !important;
+    
+}
